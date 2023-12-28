@@ -1,0 +1,373 @@
+Building configuration...
+
+Current configuration : 5968 bytes
+!
+version 15.5
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname Router
+!
+boot-start-marker
+boot-end-marker
+!
+!
+enable secret 5 $1$wh7H$7rilzb1Jzk5xKvnbEt2gy1
+enable password admin
+!
+aaa new-model
+!
+!
+!
+!
+!
+  
+
+!
+!
+aaa session-id common
+!
+!
+!
+bsd-client server url https://cloudsso.cisco.com/as/token.oauth2
+mmi polling-interval 60
+no mmi auto-configure
+no mmi pvc
+mmi snmp-timeout 180
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+  
+
+!
+
+
+!
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+!
+!
+cts logging verbose
+!
+!
+crypto pki certificate pool
+ certificate ca 1EBF5950B8C980374C06F7EB554FB5ED
+  
+
+  	quit
+ certificate ca 03
+  	quit
+ certificate ca 0203E5AEC58D04251AAB1125AA
+  	quit
+ certificate ca 0203E5B882EB20F825276D3D66
+  	quit
+ certificate ca 01
+  	quit
+ certificate ca 0203E5C068EF631A9C72905052
+  	quit
+ certificate ca 0203E57EF53F93FDA50921B2A6
+  	quit
+ certificate ca 01A65AF15EE994EBE1
+  	quit
+ certificate ca 0203E5936F31B01349886BA217
+  	quit
+ certificate ca 019A335878CE16C1C1
+  	quit
+ certificate ca 01
+  	quit
+ certificate ca 00A68B79290000000050D091F9
+  	quit
+  
+
+ certificate ca 7777062726A9B17C
+  	quit
+ certificate ca 7C4F04391CD4992D
+  	quit
+ certificate ca 00
+  	quit
+ certificate ca 020000B9
+  	quit
+ certificate ca 1F47AFAA62007050544C019E9B63992A
+  	quit
+ certificate ca 605949E0262EBB55F90A778A71F94AD86C
+  	quit
+ certificate ca 066C9FD5749736663F3B0B9AD9E89E7603F24A
+  	quit
+ certificate ca 05C6
+  	quit
+ certificate ca 066C9FD29635869F0A0FE58678F85B26BB8A37
+  	quit
+ certificate ca 2C299C5B16ED0595
+  	quit
+ certificate ca 00B0B75A16485FBFE1CBF58BD719E67D
+  	quit
+ certificate ca 00
+  
+
+  	quit
+ certificate ca 56B629CD34BC78F6
+  	quit
+ certificate ca 0A0142800000014523CF467C00000002
+  	quit
+ certificate ca 055556BCF25EA43535C3A40FD5AB4572
+  	quit
+ certificate ca 75E6DFCBC1685BA8
+  	quit
+ certificate ca 66F23DAF87DE8BB14AEA0C573101C2EC
+  	quit
+ certificate ca 00C27E43044E473F19
+  	quit
+ certificate ca 0CE7E0E517D846FE8FE560FC1BF03039
+  	quit
+ certificate ca 31F5E4620C6C58EDD6D8
+  	quit
+ certificate ca 075622A4E8D48A894DF413C8F0F8EAA5
+  	quit
+ certificate ca 083BE056904246B1A1756AC95991C74A
+  	quit
+ certificate ca 4A538C28
+  	quit
+  
+
+ certificate ca 00
+  	quit
+ certificate ca 00
+  	quit
+ certificate ca 01
+  	quit
+ certificate ca 0983F3
+  	quit
+ certificate ca 5C8B99C55A94C5D27156DECD8980CC26
+  	quit
+ certificate ca 00
+  	quit
+ certificate ca 4CAAF9CADB636FE01FF74ED85B03869D
+  	quit
+ certificate ca 059B1B579E8E2132E23907BDA777755C
+  	quit
+ certificate ca 08BD85976C9927A48068473B
+  	quit
+ certificate ca 570A119742C4E3CC
+  	quit
+ certificate ca 00
+  	quit
+ certificate ca 0CBE
+  
+
+  	quit
+ certificate ca 08165F8A4CA5EC00C99340DFC4C6AE23B81C5AA4
+  	quit
+ certificate ca 0444C0
+  	quit
+ certificate ca 184ACCD6
+  	quit
+ certificate ca 0A0142800000014523C844B500000002
+  	quit
+ certificate ca 00BB401C43F55E4FB0
+  	quit
+ certificate ca 110034B64EC6362D36
+  	quit
+ certificate ca 41D29DD172EAEEA780C12C6CE92F8752
+  	quit
+ certificate ca 788F275C81125220A504D02DDDBA73F4
+  	quit
+ certificate ca 76B1205274F0858746B3F8231AF6C2C0
+  	quit
+ certificate ca 49412CE40010
+  	quit
+ certificate ca 3863DEF8
+  	quit
+  
+
+ certificate ca 6D8C1446B1A60AEE
+  	quit
+ certificate ca 456B5054
+  	quit
+ certificate ca 02AC5C266A0B409B8F0B79F2AE462577
+  	quit
+ certificate ca 0B931C3AD63967EA6723BFC3AF9AF44B
+  	quit
+ certificate ca 0BA15AFA1DDFA0B54944AFCD24A06CEC
+  	quit
+ certificate ca 212A560CAEDA0CAB4045BF2BA22D3AEA
+  	quit
+ certificate ca 7B2C9BD316803299
+  	quit
+ certificate ca 0509
+  	quit
+ certificate ca 3CF607A968700EDA8B84
+  	quit
+ certificate ca 2EF59B0228A7DB7AFFD5A3A9EEBD03A0CF126A1D
+  	quit
+ certificate ca 0194301EA20BDDF5C5332AB1434471F8D6504D0D
+  	quit
+ certificate ca 78585F2EAD2C194BE3370735341328B596D46593
+  
+
+  	quit
+ certificate ca 066C9FCF99BF8C0A39E2F0788A43E696365BCA
+  	quit
+ certificate ca 445734245B81899B35F2CEB82B3B5BA726F07528
+  	quit
+ certificate ca 01
+  	quit
+ certificate ca 0D6A5F083F285C3E5195DF5D
+  	quit
+ certificate ca 008210CFB0D240E3594463E0BB63828B00
+  	quit
+ certificate ca 05F70E86DA49F346352EBAB2
+  	quit
+ certificate ca 02
+  	quit
+ certificate ca 5A4BBD5AFB4F8A5BFA65E5
+  	quit
+ certificate ca 5EC3B7A6437FA4E0
+  	quit
+ certificate ca 00
+  	quit
+ certificate ca 21D6D04A4F250FC93237FCAA5E128DE9
+  	quit
+  
+
+ certificate ca 7497258AC73F7A54
+  	quit
+ certificate ca 4F1BD42F54BB2F4B
+  	quit
+ certificate ca 01
+  	quit
+ certificate ca 7D0997FEF047EA7A
+  	quit
+ certificate ca 15C8BD65475CAFB897005EE406D2BC9D
+  	quit
+ certificate ca 00
+  	quit
+ certificate ca 1ED397095FD8B4B347701EAABE7F45B3
+  	quit
+ certificate ca 033AF1E6A711A9A0BB2864B11D09FAE5
+  	quit
+ certificate ca 04000000000121585308A2
+  	quit
+ certificate ca 50946CEC18EAD59C4DD597EF758FA0AD
+  	quit
+ certificate ca 01
+  	quit
+ certificate ca 00D9B5437FAFA9390F000000005565AD58
+  
+
+  	quit
+ certificate ca 0095BE16A0F72E46F17B398272FA8BCD96
+  	quit
+ certificate ca 0092B888DBB08AC163
+  	quit
+ certificate ca 066C9FD7C1BB104C2943E5717B7B2CC81AC10E
+  	quit
+ certificate ca 00FEDCE3010FC948FF
+  	quit
+ certificate ca 00
+  	quit
+ certificate ca 01FD6D30FCA3CA51A81BBC640E35032D
+  	quit
+ certificate ca 200605167002
+  	quit
+ certificate ca 5D938D306736C8061D1AC754846907
+  	quit
+ certificate ca 040000000001154B5AC394
+  	quit
+ certificate ca 02
+  	quit
+ certificate ca 0983F4
+  	quit
+  
+
+ certificate ca 0CF08E5C0816A5AD427FF0EB271859D0
+  	quit
+ certificate ca 5C33CB622C5FB332
+  	quit
+ certificate ca 01
+  	quit
+username cisco password 0 cisco
+!
+redundancy
+!
+!
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+  
+
+!
+interface Ethernet0/0
+ ip address 192.168.0.8 255.255.255.0
+!
+interface Ethernet0/1
+ no ip address
+ shutdown
+!
+interface Ethernet0/2
+ no ip address
+ shutdown
+!
+interface Ethernet0/3
+ no ip address
+ shutdown
+!
+ip forward-protocol nd
+!
+!
+no ip http server
+no ip http secure-server
+!
+!
+  
+
+!
+!
+!
+!
+control-plane
+!
+!
+!
+!
+!
+!
+!
+!
+line con 0
+ logging synchronous
+line aux 0
+line vty 0 4
+ password cisco
+ transport input telnet
+!
+!
+end

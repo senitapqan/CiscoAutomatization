@@ -1,0 +1,3 @@
+,host_ip,hostname,category,Interface,IP,Subnet Mask
+0,192.168.0.8,Router,IP,Ethernet0/0,192.168.0.8,255.255.255.0
+1,192.168.0.9,Router,IP,Ethernet0/0,192.168.0.9,255.255.255.0
